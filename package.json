@@ -1,29 +1,29 @@
 {
   "name": "breakpoints-hook",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+  "author": "Vitalie Maldur <vitalie@bluepixelgroup.com> (https://bluepixelgroup.com)",
+  "description": "React hooks for responsive design implementation",
+  "keywords": [
+    "react",
+    "hooks",
+    "response",
+    "breakpoints",
+    "media query"
+  ],
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "react": ">=16.8.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "yarn && cp package.json dist && babel src --out-file dist/index.js"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "main": "index.js",
+  "repository": "git@github.com:vitaliemaldur/breakpoints-hook.git",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4"
   }
 }
