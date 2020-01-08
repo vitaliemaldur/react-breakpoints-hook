@@ -11,7 +11,7 @@
     "media query"
   ],
   "license": "MIT",
-  "private": true,
+  "private": false,
   "peerDependencies": {
     "react": ">=16.8",
     "react-dom": ">=16.8"
