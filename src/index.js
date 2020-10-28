@@ -3,7 +3,7 @@ import { window, document } from "browser-monads";
 
 const getWidth = () => window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-function useCurrentWitdh() {
+function useCurrentWidth() {
   let [width, setWidth] = useState(getWidth());
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function useBreakpoints(breakpoints) {
     throw new Error('Invalid configuration object!')
   }
 
-  let width = useCurrentWitdh();
+  let width = useCurrentWidth();
   let result = {}
 
   for(const key of Object.keys(breakpoints)) {
@@ -50,4 +50,4 @@ function useBreakpoints(breakpoints) {
 }
 
 export default useBreakpoints;
-export { useCurrentWitdh, useBreakpoints };
+export { useCurrentWidth, useBreakpoints };

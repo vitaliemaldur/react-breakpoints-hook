@@ -1,9 +1,9 @@
 import React from 'react';
-import { useBreakpoints, useCurrentWitdh } from 'react-breakpoints-hook';
+import { useBreakpoints, useCurrentWidth } from 'react-breakpoints-hook';
 
 
 const App = () => {
-  let width = useCurrentWitdh();
+  let width = useCurrentWidth();
   let { xs, sm, md, lg } = useBreakpoints({
     xs: {min: 0, max: 360},
     sm: {min: 361, max: 960},
