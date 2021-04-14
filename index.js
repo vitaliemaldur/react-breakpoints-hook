@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.useCurrentWitdh = useCurrentWitdh;
+exports.useCurrentWidth = useCurrentWidth;
 exports.useBreakpoints = useBreakpoints;
 exports.default = void 0;
 
@@ -23,7 +23,7 @@ var getWidth = function getWidth() {
   return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 };
 
-function useCurrentWitdh() {
+function useCurrentWidth() {
   var _useState = (0, _react.useState)(getWidth()),
       _useState2 = _slicedToArray(_useState, 2),
       width = _useState2[0],
@@ -52,7 +52,7 @@ function useBreakpoints(breakpoints) {
     throw new Error('Invalid configuration object!');
   }
 
-  var width = useCurrentWitdh();
+  var width = useCurrentWidth();
   var result = {};
 
   for (var _i2 = 0, _Object$keys = Object.keys(breakpoints); _i2 < _Object$keys.length; _i2++) {
