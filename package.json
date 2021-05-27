@@ -1,6 +1,6 @@
 {
   "name": "react-breakpoints-hook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Vitalie Maldur <vitalie@bluepixelgroup.com> (https://bluepixelgroup.com)",
   "description": "React hooks for responsive design implementation",
   "keywords": [
@@ -17,8 +17,7 @@
     "react-dom": ">=16.8"
   },
   "scripts": {
-    "build": "yarn && babel src --out-file dist/index.js",
-    "prepublishOnly": "yarn build && cp package.json dist && cp README.md dist"
+    "build": "yarn && babel src --out-file dist/index.js && cp package.json dist && cp README.md dist"
   },
   "main": "index.js",
   "repository": "git@github.com:vitaliemaldur/react-breakpoints-hook.git",
